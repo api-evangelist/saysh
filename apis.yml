@@ -1,8 +1,24 @@
 aid: saysh
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/saysh.png
 name: Saysh
-description: 'Saysh is a company surfaced as a portfolio company of redpoint-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Saysh is a direct-to-consumer athletic footwear and apparel brand founded by Olympic
+  champion sprinter Allyson Felix, designing sneakers engineered specifically for women''s biomechanics
+  under the banner "Women Deserve Better." Its lineup spans performance running shoes (the Felix Runner
+  and Evelyn Runner) and the everyday Saysh One, plus apparel, accessories, and the Saysh+ Run Club
+  membership. The saysh.com storefront runs on Shopify, so customer-facing commerce is served through
+  the Shopify platform rather than a first-party Saysh developer API; no public Saysh API program,
+  OpenAPI, SDKs, or developer portal were found. Backed by Redpoint Ventures.'
 url: https://raw.githubusercontent.com/api-evangelist/saysh/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Footwear
+- Retail
+- Ecommerce
+- Apparel
+- Direct to Consumer
+- Shopify
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/saysh-domain-security.yml
+- type: WellKnown
+  url: well-known/saysh-well-known.yml
 - type: Website
   url: https://saysh.com/
+- type: Blog
+  url: https://saysh.com/blogs/stories
+- type: Support
+  url: https://saysh.com/pages/support
+- type: About
+  url: https://saysh.com/pages/about-us
+- type: Login
+  url: https://saysh.com/account
+- type: TermsOfService
+  url: https://saysh.com/pages/terms
+- type: PrivacyPolicy
+  url: https://saysh.com/pages/privacy-policy
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
