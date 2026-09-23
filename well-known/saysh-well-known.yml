@@ -1,22 +1,27 @@
 generated: '2026-07-21'
 method: searched
 source: live probe of https://saysh.com/.well-known/*
-note: >-
-  saysh.com is a Shopify-hosted storefront. The OIDC/OAuth discovery documents
-  below are served by Shopify's platform Customer Account API for this shop
-  (issuer https://shopify.com/authentication/53825044671); they are not a
-  first-party Saysh-authored API. Captured verbatim as served on the saysh.com host.
+note: saysh.com is a Shopify-hosted storefront. The OIDC/OAuth discovery documents below are served by
+  Shopify's platform Customer Account API for this shop (issuer https://shopify.com/authentication/53825044671);
+  they are not a first-party Saysh-authored API. Captured verbatim as served on the saysh.com host.
 host: https://saysh.com
-documents:
-- path: /.well-known/openid-configuration
-  status: 200
-  file: saysh-openid-configuration.json
-- path: /.well-known/oauth-authorization-server
-  status: 200
-  file: saysh-oauth-authorization-server.json
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
+hosts:
+- host: https://saysh.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: saysh-openid-configuration.json
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: saysh-oauth-authorization-server.json
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
