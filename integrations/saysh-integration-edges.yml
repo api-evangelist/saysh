@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/saysh/integrations
+- https://n8n.io/integrations/saysh/
+- https://composio.dev/toolkits/saysh
+- https://monid.ai/tools/saysh
+checked:
+- https://composio.dev/toolkits/saysh
+- https://monid.ai/tools/saysh
+- https://n8n.io/integrations/saysh/
+- https://zapier.com/apps/saysh/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
